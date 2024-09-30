@@ -1,6 +1,8 @@
 import express, { Router } from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
+import authRoute from './routes/authRoute.js'
+
 
 dotenv.config();
 
@@ -18,6 +20,7 @@ mongoose
 });
 
 
+app.use('/api/auth', authRoute);
 
 app.listen(8000, () => {
     console.log('Server is running on port 8000');
