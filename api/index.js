@@ -1,7 +1,7 @@
-import express, { Router } from 'express';
+import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
-import authRoute from './routes/authRoute.js'
+import authRoute from './routes/authRoute.js';
 
 
 dotenv.config();
@@ -14,6 +14,7 @@ mongoose
 .connect(process.env.MONGO)
 .then(() => {
     console.log('Connected to MONGODB');
+    
 })
 .catch((err) => {
     console.log(err);
