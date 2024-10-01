@@ -5,3 +5,13 @@
 body{
     background-color: rgb(241,245,241);
 }
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.success-message {
+    color: green;
+    margin-bottom: 1rem;
+}
