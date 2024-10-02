@@ -3,18 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 export default function SignUp() {
-    const [formData, setFormData] = useState({});
-    const [error,setError] = useState(false);
-    const [loading,setLoading] = useState(false);
-    const navigate = useNavigate();
-    const handleChange = (e) => {
-      // when keeping previous informatio ...is a pread operator
-      setFormData({
-        ...formData,
-        [e.target.id]: e.target.value,
-      });
-    };
-    
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
